@@ -989,4 +989,61 @@ select {
   .form-col {
     padding: 0;
   }
+  
+  .btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .container {
+    padding: 10px;
+  }
+  
+  input, select, textarea {
+    font-size: 16px !important;  /* Prevents zoom on iOS */
+  }
+  
+  .wrapper-steppy {
+    padding: 10px;
+  }
+}
+
+/* Ajout de styles pour tablettes */
+@media (min-width: 401px) and (max-width: 768px) {
+  .container {
+    width: 95%;
+    padding: 15px;
+  }
+  
+  .wrapper-steppy {
+    padding: 20px;
+  }
+  
+  .btn {
+    padding: 8px 15px;
+  }
+  
+  .steppy-item-counter {
+    height: 50px;
+    width: 50px;
+  }
+}
+
+/* Optimisations générales pour le responsive */
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.table-responsive {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+input, select, textarea {
+  max-width: 100%;
 }
