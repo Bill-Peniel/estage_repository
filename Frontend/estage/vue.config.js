@@ -7,9 +7,8 @@ module.exports = {
     headers: {
       'Access-Control-Allow-Origin': '*'
     },
-    public: '0.0.0.0:8087',
     client: {
-      webSocketURL: 'auto://0.0.0.0:8087/ws'
+      webSocketURL: 'ws://0.0.0.0:8087/ws'
     },
     historyApiFallback: true,
     hot: true
