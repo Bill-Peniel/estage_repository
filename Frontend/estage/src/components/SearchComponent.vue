@@ -40,5 +40,29 @@ export default {
 </script>
 
 <style>
+.banner-section {
+  width: 100%;
+  position: relative;
+}
+
+.banner-section img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .banner-section img {
+    height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner-section img {
+    height: 200px;
+  }
+}
+</style>
 
 </style>
