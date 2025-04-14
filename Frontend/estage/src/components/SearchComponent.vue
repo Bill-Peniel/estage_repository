@@ -2,7 +2,7 @@
 <template>
     <div>
         <section class="section section-search">
-            <img src="/assets/img/search-bg.png" class="background-img" alt="Search background">
+            <img src="/assets/img/search-bg.png" class="background-img w-full h-full object-cover object-center absolute inset-0" alt="Search background">
             <div class="container-fluid">
                 <div class="banner-wrapper">
                     <div class="banner-header text-center">
@@ -29,14 +29,7 @@ export default {
 }
 
 .background-img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
     filter: brightness(0.5);
-    position: relative;
     padding: 80px 0;
 }
 
