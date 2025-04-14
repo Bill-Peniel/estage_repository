@@ -22,7 +22,7 @@ export default {
 
 <style>
 .section-search {
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/img/search-bg.png');
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/assets/img/search-bg.png');
     min-height: 450px;
     background-size: cover;
     background-position: center;
