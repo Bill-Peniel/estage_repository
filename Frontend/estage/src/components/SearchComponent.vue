@@ -1,67 +1,100 @@
 
 <template>
     <div>
-        <!-- Home Banner -->
-			<section class="section section-search">
-				<div class="container-fluid">
-					<div class="banner-wrapper">
-						<div class="banner-header text-center">
-							<h1 class="text-white">Recherches une Structure , Fais une demande de Stage</h1>
-							<p class="text-white">Découvres la ou le(s) structure(s) en adéquation avec ta formation.</p>
-						</div>
-                         
-						<!-- Search -->
-						<!--<div class="search-box">
-							<form action="templateshub.net">
-								<div class="form-group search-location">
-									<input type="text" class="form-control" placeholder="Rechercher un lieu">
-									<span class="form-text text-white">Selon votre emplacement</span>
-								</div>
-								<div class="form-group search-info">
-									<input type="text" class="form-control" placeholder="Rechercher Un Ministère">
-									<span class="form-text text-white">Ex : Finance ou Ministère de...</span>
-								</div>
-								<button type="submit" class="btn btn-primary search-btn"><i class="fas fa-search"></i> <span>Search</span></button>
-							</form>
-						</div> -->
-						<!-- /Search -->
-						
-					</div>
-				</div>
-			</section>
-	<!-- /Home Banner -->
+        <section class="section section-search">
+            <div class="container-fluid">
+                <div class="banner-wrapper">
+                    <div class="banner-header text-center">
+                        <h1 class="text-white">Recherches une Structure , Fais une demande de Stage</h1>
+                        <p class="text-white">Découvres la ou le(s) structure(s) en adéquation avec ta formation.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 </template>
 
 <script>
 export default {
-    name : 'SearchComponent'
-    
+    name: 'SearchComponent'
 }
 </script>
 
 <style>
-.banner-section {
-  width: 100%;
-  position: relative;
+.section-search {
+    background: #f9f9f9 url('../assets/img/search-bg.png') no-repeat bottom center;
+    min-height: 450px;
+    background-size: cover;
+    position: relative;
+    padding: 80px 0;
 }
 
-.banner-section img {
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  object-fit: cover;
+.banner-wrapper {
+    margin: 0 auto;
+    max-width: 800px;
+    width: 100%;
+    padding: 0 15px;
 }
 
-@media (max-width: 768px) {
-  .banner-section img {
-    height: 300px;
-  }
+.banner-header {
+    margin-bottom: 30px;
 }
 
-@media (max-width: 480px) {
-  .banner-section img {
-    height: 200px;
-  }
+.banner-header h1 {
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.banner-header p {
+    font-size: 20px;
+    margin-bottom: 0;
+    color: #fff;
+}
+
+@media (max-width: 991px) {
+    .section-search {
+        min-height: 400px;
+        padding: 60px 0;
+    }
+    
+    .banner-header h1 {
+        font-size: 32px;
+    }
+    
+    .banner-header p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 767px) {
+    .section-search {
+        min-height: 350px;
+        padding: 40px 0;
+    }
+    
+    .banner-header h1 {
+        font-size: 28px;
+    }
+    
+    .banner-header p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 479px) {
+    .section-search {
+        min-height: 300px;
+        padding: 30px 0;
+    }
+    
+    .banner-header h1 {
+        font-size: 24px;
+    }
+    
+    .banner-header p {
+        font-size: 14px;
+    }
 }
 </style>
