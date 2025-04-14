@@ -25,12 +25,20 @@ export default {
 .section-search {
     position: relative;
     min-height: 450px;
+    width: 100%;
     overflow: hidden;
+    padding: 80px 0;
 }
 
 .background-img {
     filter: brightness(0.5);
-    padding: 80px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
 }
 
 .banner-wrapper {
