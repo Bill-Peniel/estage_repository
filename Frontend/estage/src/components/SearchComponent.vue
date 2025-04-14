@@ -4,7 +4,7 @@
         <!-- Home Banner -->
 			<section class="section section-search">
 				<div class="banner-image">
-					<img src="/assets/img/homeimg.png" alt="banner" class="responsive-banner">
+					<img src="@/assets/img/homeimg.png" alt="banner" class="responsive-banner">
 				</div>
 				<div class="container-fluid">
 					<div class="banner-wrapper">
