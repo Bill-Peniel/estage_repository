@@ -31,7 +31,6 @@ export default {
 }
 
 .background-img {
-    filter: brightness(0.5);
     position: absolute;
     top: 0;
     left: 0;
@@ -39,6 +38,22 @@ export default {
     height: 100%;
     object-fit: cover;
     z-index: -1;
+}
+
+.section-search::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+.container-fluid {
+    position: relative;
+    z-index: 1;
 }
 
 .banner-wrapper {
