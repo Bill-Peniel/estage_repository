@@ -1,3 +1,4 @@
+
 <template>
     <div>
         <!-- Home Banner -->
@@ -63,6 +64,4 @@ export default {
     height: 200px;
   }
 }
-</style>
-
 </style>
