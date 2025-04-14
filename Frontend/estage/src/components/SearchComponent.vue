@@ -2,6 +2,7 @@
 <template>
     <div>
         <section class="section section-search">
+            <img src="/assets/img/search-bg.png" class="background-img" alt="Search background">
             <div class="container-fluid">
                 <div class="banner-wrapper">
                     <div class="banner-header text-center">
@@ -22,10 +23,19 @@ export default {
 
 <style>
 .section-search {
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/assets/img/search-bg.png');
+    position: relative;
     min-height: 450px;
-    background-size: cover;
-    background-position: center;
+    overflow: hidden;
+}
+
+.background-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.5);
     position: relative;
     padding: 80px 0;
 }
