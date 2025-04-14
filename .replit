@@ -19,6 +19,10 @@ externalPort = 8081
 localPort = 8087
 externalPort = 3000
 
+[[ports]]
+localPort = 8088
+externalPort = 3001
+
 [workflows]
 runButton = "Run"
 
