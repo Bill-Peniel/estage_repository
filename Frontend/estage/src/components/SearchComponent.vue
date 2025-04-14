@@ -3,9 +3,6 @@
     <div>
         <!-- Home Banner -->
 			<section class="section section-search">
-				<div class="banner-image">
-					<img src="../assets/img/homeimg.png" alt="banner" class="img-fluid">
-				</div>
 				<div class="container-fluid">
 					<div class="banner-wrapper">
 						<div class="banner-header text-center">
@@ -44,41 +41,27 @@ export default {
 </script>
 
 <style>
-.section-search {
-  position: relative;
-  min-height: 400px;
-  background: #f5f5f5;
-  padding: 0;
-}
-
-.banner-image {
-  position: relative;
+.banner-section {
   width: 100%;
-  height: 100%;
-  overflow: hidden;
+  position: relative;
 }
 
-.banner-image img {
+.banner-section img {
   width: 100%;
   height: auto;
-  display: block;
+  max-width: 100%;
   object-fit: cover;
 }
 
-@media (max-width: 991px) {
-  .section-search {
-    min-height: 300px;
+@media (max-width: 768px) {
+  .banner-section img {
+    height: 300px;
   }
 }
 
-@media (max-width: 767px) {
-  .section-search {
-    min-height: 200px;
-  }
-  
-  .banner-image img {
-    height: 100%;
-    object-position: center;
+@media (max-width: 480px) {
+  .banner-section img {
+    height: 200px;
   }
 }
 </style>
